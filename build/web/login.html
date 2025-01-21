@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("images/bg2.jpeg") ;
+            background-size: cover;
+            background-repeat: no-repeat ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+            
+        .login-container {
+            background-color: #ddd;
+            background-image: url("images/bg2.jpeg");
+            background-repeat: no-repeat ;
+            background-size: cover;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center; /* Center the form */
+        }
+        .login-container h1 {
+            margin-bottom: 20px;
+            color: white; /* Blue color for the title */
+        }
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .login-form input[type="submit"] {
+            width: 100%;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth color transition on hover */
+        }
+        .login-form input[type="submit"]:hover {
+            background-color: black; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <div style = " text-align: centre">
+       
+    </div>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form class="login-form" action="LoginChecker" method="post">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
